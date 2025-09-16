@@ -19,12 +19,18 @@ export const TaskList = () => {
 
     return (
         <>
-            <h3 className="mb-4 font-semibold text-gray-900 dark:text-white">Task List</h3>
-            <ul className="w-[75%] text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
-                {tasks ? tasks.map((task, index)=>{
-                    return <ActionItems key={index} items={task}/>
-                }) : <div>LOADING</div>}
-            </ul>
+            <div className="m-8 h-full flex flex-col gap-4 justify-center items-center bg-card border backdrop-blur-sm border-dotted border-b-2 border-black rounded-xl p-6 shadow-lg shadow-primary/5">
+                <h2 className="text-3xl font-semibold transition-colors duration-200">Task List</h2>
+                <ul className="w-[75%] pb-4">
+                    {tasks.length > 0 ? (
+                        tasks.map((task, index) => (
+                        <ActionItems key={task.id || index} items={task} />
+                        ))
+                    ) : (
+                        <div className="text-center p-4 text-gray-500">Loading...</div>
+                    )}
+                </ul>
+            </div>
         </>
     )
 }

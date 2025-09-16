@@ -1,16 +1,20 @@
-import { ActionItems } from './components/ActionItems.jsx'
 import { Navbar } from './components/Navbar.jsx'
-import { Summary } from './components/Summary.jsx'
+
 import { TaskList } from './components/TaskList.jsx' 
+import { Hero } from './components/Hero.jsx'
+import { ThemeProvider } from "next-themes";
 
 function App() {
 
 
   return (
     <>
-    <Navbar/>
-    <Summary/>
-    <TaskList/>
+    <ThemeProvider attribute="class">
+      <Navbar/>
+      <Hero/>
+      <TaskList/>
+    </ThemeProvider>
+
     </>
   )
 }
