@@ -25,9 +25,9 @@ const ThemeToggle = () => {
       className="w-9 h-9 p-0 border border-border/60 bg-card/60 backdrop-blur-sm hover:bg-card/80 transition-all duration-200 rounded-full flex items-center justify-center"
     >
       {isDark ? (
-        <Sun className="h-4 w-4 text-primary" />
+        <Sun className="h-4 w-4 text-white" />
       ) : (
-        <Moon className="h-4 w-4 text-primary" />
+        <Moon className="h-4 w-4 text-black" />
       )}
     </button>
   );

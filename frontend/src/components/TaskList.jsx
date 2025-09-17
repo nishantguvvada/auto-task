@@ -19,7 +19,7 @@ export const TaskList = () => {
 
     return (
         <>
-            <div className="m-8 h-full flex flex-col gap-4 justify-center items-center bg-card border backdrop-blur-sm border-dotted border-b-2 border-black rounded-xl p-6 shadow-lg shadow-primary/5">
+            <div className="m-8 h-full flex flex-col gap-4 justify-center items-center bg-card border backdrop-blur-sm border-dotted border-b-2 border-border rounded-xl p-6 shadow-lg shadow-primary/5">
                 <h2 className="text-3xl font-semibold transition-colors duration-200">Task List</h2>
                 <ul className="w-[75%] pb-4">
                     {tasks.length > 0 ? (

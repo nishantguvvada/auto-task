@@ -28,7 +28,7 @@ export const Summary = ({ totalTasks, completedTasks, pendingTasks }) => {
     };
 
     return (
-        <div className="m-8 h-80 bg-card border backdrop-blur-sm border-dotted border-b-2 border-black rounded-xl p-6 shadow-lg shadow-primary/5">
+        <div className="m-8 h-80 bg-card border backdrop-blur-sm border-dotted border-b-2 border-border rounded-xl p-6 shadow-lg shadow-primary/5">
             <h2 className="text-lg font-semibold text-card-foreground mb-3">
                 Today's Summary
             </h2>

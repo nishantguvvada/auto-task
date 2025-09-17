@@ -10,7 +10,7 @@ export const Calendar = ({ tasksByDate, selectedDate, onDateSelect }) => {
   };
 
   return (
-    <div className="m-8 h-80 flex flex-col justify-evenly bg-card border backdrop-blur-sm border-dotted border-b-2 border-black rounded-xl p-6 shadow-lg shadow-primary/5">
+    <div className="m-8 h-80 flex flex-col justify-evenly bg-card border backdrop-blur-sm border-dotted border-b-2 border-border rounded-xl p-6 shadow-lg shadow-primary/5">
       <h2 className="text-lg font-semibold text-card-foreground mb-4">Week Overview</h2>
 
       <div className="grid grid-cols-7 gap-2">
@@ -25,7 +25,7 @@ export const Calendar = ({ tasksByDate, selectedDate, onDateSelect }) => {
               key={index}
               onClick={() => handleDateSelect(day)}
               className={`
-                relative p-3 h-24 rounded-lg text-center transition-all duration-200 hover:scale-105 shadow-md hover:shadow-lg
+                relative p-3 h-24 rounded-lg text-center transition-all duration-200 hover:scale-105 shadow-md hover:shadow-lg bg-foregrounds
                 ${isSelected
                   ? "bg-primary text-primary-foreground shadow-primary/20"
                   : isToday
