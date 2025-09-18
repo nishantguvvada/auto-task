@@ -25,7 +25,7 @@ export const Calendar = ({ tasksByDate, selectedDate, onDateSelect }) => {
               key={index}
               onClick={() => handleDateSelect(day)}
               className={`
-                relative p-3 h-24 rounded-lg text-center transition-all duration-200 hover:scale-105 shadow-md hover:shadow-lg bg-foregrounds
+                relative p-3 h-24 rounded-lg text-center transition-all duration-200 hover:scale-105 shadow-md hover:shadow-lg border-dotted border-b-2 border-border
                 ${isSelected
                   ? "bg-primary text-primary-foreground shadow-primary/20"
                   : isToday
